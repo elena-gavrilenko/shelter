@@ -37,8 +37,6 @@
 	--start-screen-gradient-background: #211f20;
 	--footer-gradient-background: #211f20;
 }
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -66,7 +64,7 @@ li{
   display: flex;
   flex-direction: row;
 }
-
+/* header */
 .header {
   width: 100%;
   height: 60px;
@@ -100,8 +98,6 @@ li{
   letter-spacing: 0.1em;
   color: var(--color-light-xl);
 }
-.header__menu {
-}
 .menu {
   display: flex;
   flex-direction: row;
@@ -109,7 +105,6 @@ li{
   align-items: center;
   width: 40.3%;
 }
-
 .header__link {
   font-family: 'arial-regular';
   font-size: 15px;
@@ -118,11 +113,9 @@ li{
   position: relative;
   cursor: pointer;
 }
-
 .header__link:hover {
   color: var(--color-light-s);
 }
-
 .header__link::after {
   display: block;
   position: absolute;
@@ -134,12 +127,10 @@ li{
   content: "";
   transition: width 0.5s;
 }
-
 .header__link:hover::after {
   width: 100%;
   color: var(--color-primary);
 }
-
 .header__link_active::after {
   display: block;
   position: absolute;
@@ -149,13 +140,12 @@ li{
   height: 3px;
   background-color: var(--color-primary);
   content: "";
-
 }
-
 .header__link_active {
   color: var(--color-light-s);
 }
-
+/* main */
+/* start */
 .start {
   display: flex;
   flex-direction: row;
@@ -210,14 +200,13 @@ li{
 }
 .start__button:hover {
   cursor: pointer;
-  background-color: #FDDCC4;
+  background-color: var(--color-primary-light);
 }
 .start__image {
   width: 699px;
   margin-bottom: 0;
 }
-.about {
-}
+/* about */
 .about__wrapper {
   padding-top: 80px;
   padding-bottom: 96px;
@@ -252,6 +241,7 @@ li{
   margin-top: 5px;
   color: var(--color-dark-xl);
 }
+/* pets */
 .pets {
   display: flex;
 }
@@ -260,7 +250,7 @@ li{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #F6F6F6;
+  background-color: var(--color-light-l);
   row-gap: 60px;
   padding: 79px 40px 100px 40px;
 }
@@ -273,18 +263,111 @@ li{
   text-align: center;
 }
 .pets__slider {
+  width: 100%;
+  height: 435px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 53px;
 }
-.slider {
+.pets__slider-wrapper {
+  width: 990px;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
 }
-.slider__arrow-left {
+.pets__button-arrow {
+   width: 52px;
+  height: 52px;
+  border: 2px solid var(--color-primary);
+  border-radius: 50%;
+  background-color: var(--color-light-s);
+  color: var(--color-dark-3xl);
+  font-family: 'georgia-regular';
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  transition: background-color .3s ease-in-out;
 }
-.slider__wrapper {
-}
-.slider__arrow-right {
-}
-.pets__button {
+.pets__button-arrow_left {
+   background-image: url(../../assets/icons/Arrow-l.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.pets__button-arrow_right {
+  background-image: url(../../assets/icons/Arrow-r.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.pets__button-arrow:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-light);
+  border: 1px solid var(--color-primary-light);
+}
+.pets__card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-light-s);
+  border-radius: 9px;
+  padding-bottom: 31px;
+  transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.pets__card:hover {
+  cursor: pointer;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  background-color: var(--color-light-xl);
+}
+.pets__card:hover .pets__button-card {
+  cursor: pointer;
+  background-color: var(--color-primary-light);
+  border: 1px solid var(--color-primary-light);
+}
+.pets__name {
+  font-family: 'georgia-regular';
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
+.pets__button-card {
+  width: 187px;
+  height: 52px;
+  border: 1px solid var(--color-primary);
+  border-radius: 26px;
+  font-family: 'georgia-regular';
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--color-light-s);
+  color: var(--color-dark-3xl);
+  transition: background-color .3s ease-in-out;
+}
+.pets__button-primary {
+  width: 261px;
+  height: 52px;
+  border: none;
+  border-radius: 26px;
+  background: var(--color-primary);
+  transition: background-color .3s ease-in-out;
+}
+.pets__button-primary:hover {
+  cursor: pointer;
+  background-color: var(--color-primary-light);
+}
+.pets__link {
+  color: var(--color-dark-3xl);
+  font-family: 'georgia-regular';
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+/* help */
 .help__wrapper {
   width: 100%;
   display: flex;
@@ -316,7 +399,6 @@ li{
   height: 113px;
   text-align: center;
 }
-
 .item__text {
   font-family: 'georgia-regular';
   font-size: 20px;
@@ -324,7 +406,7 @@ li{
   letter-spacing: 0.06em;
   margin-top: 26px;
 }
-
+/* donation */
 .donation__wrapper {
   width: 100%;
   display: flex;
@@ -391,6 +473,7 @@ li{
   line-height: 18px;
   color: var(--color-dark-m);
 }
+/* footer */
 .footer__wrapper {
   width: 100%;
   padding-top: 40px;
@@ -398,14 +481,12 @@ li{
   background-position: center 0;
   background-repeat: repeat, no-repeat;
 }
-
 .footer__content {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-
 .footer__contacts-wrapper {
   display: flex;
   flex-direction: row;
@@ -413,7 +494,6 @@ li{
   width: 61.5%;
   padding-top: 15px;
 }
-
 .footer__contacts {
   width: 279px;
   height: 235px;
@@ -421,7 +501,6 @@ li{
   flex-direction: column;
   justify-content: space-between;
 }
-
 .footer__location {
   width: 300px;
   height: 235px;
@@ -429,28 +508,24 @@ li{
   flex-direction: column;
   justify-content: space-between;
 }
-
 .footer__title {
   font-family: 'georgia-regular';
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: var(--color-light-xl);
 }
-
 .footer__info {
   display: flex;
 }
-
 .footer__address {
   font-family: 'georgia-regular';
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #F1CDB3;
+  color: var(--color-primary);
   padding-top: 14px;
 }
-
 .footer__icon {
   padding-right: 20px;
   float: left;

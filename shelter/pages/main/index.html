@@ -59,11 +59,7 @@
       <section class="about" id="about">
         <div class="about__wrapper container">
           <div class="about__image">
-            <img
-              src="../../assets/images/about-pets.png"
-              alt="cat&dog"
-              srcset=""
-            />
+            <img src="../../assets/images/about-pets.png" alt="cat&dog" />
           </div>
           <div class="about__content">
             <div class="about__title">About the shelter “Cozy House”</div>
@@ -87,12 +83,51 @@
       <section class="pets" id="pets">
         <div class="pets__wrapper container">
           <div class="pets__title">Our friends who are looking for a house</div>
-          <div class="pets__slider slider">
-            <button class="slider__arrow-left"></button>
-            <div class="slider__wrapper"></div>
-            <button class="slider__arrow-right"></button>
+          <div class="pets__slider">
+            <button
+              class="pets__button-arrow pets__button-arrow_left"
+              id="btn-left"
+            ></button>
+            <div class="pets__slider-wrapper">
+              <div class="pets__card">
+                <img
+                  class="pats__img"
+                  src="../../assets/images/pets-katrine.png"
+                  alt="cat katrine"
+                />
+                <div class="pets__name">Katrine</div>
+                <button class="pets__button-card">Learn more</button>
+              </div>
+              <div class="pets__card">
+                <img
+                  class="pets__img"
+                  src="../../assets/images/pets-jennifer.png"
+                  alt="puppy jennifer"
+                />
+                <div class="pets__name">Jennifer</div>
+                <button class="pets__button-card">Learn more</button>
+              </div>
+              <div class="pets__card">
+                <img
+                  class="pats__img"
+                  src="../../assets/images/pets-woody.png"
+                  alt="dog woody"
+                />
+                <div class="pets__name">Woody</div>
+                <button class="pets__button-card">Learn more</button>
+              </div>
+            </div>
+            <button
+              class="pets__button-arrow pets__button-arrow_right"
+              id="btn-left"
+            ></button>
           </div>
-          <button class="pets__button">Get to know the rest</button>
+
+          <button class="pets__button-primary">
+            <a class="pets__link" href="../pets/index.html"
+              >Get to know the rest</a
+            >
+          </button>
         </div>
       </section>
       <section class="help" id="help">
@@ -101,11 +136,7 @@
           <div class="help__content">
             <div class="help__item item">
               <div class="item__image">
-                <img
-                  src="../../assets/icons/icon-pet-food.svg"
-                  alt="icon"
-                  srcset=""
-                />
+                <img src="../../assets/icons/icon-pet-food.svg" alt="icon" />
               </div>
               <div class="item__text">Pet food</div>
             </div>
@@ -114,18 +145,13 @@
                 <img
                   src="../../assets/icons/icon-transportation.svg"
                   alt="icon"
-                  srcset=""
                 />
               </div>
               <div class="item__text">Transportation</div>
             </div>
             <div class="help__item">
               <div class="item__image">
-                <img
-                  src="../../assets/icons/icon-toys.svg"
-                  alt="icon"
-                  srcset=""
-                />
+                <img src="../../assets/icons/icon-toys.svg" alt="icon" />
               </div>
               <div class="item__text">Toys</div>
             </div>
@@ -134,38 +160,25 @@
                 <img
                   src="../../assets/icons/icon-bowls-and-cups.svg"
                   alt="icon"
-                  srcset=""
                 />
               </div>
               <div class="item__text">Bowls and cups</div>
             </div>
             <div class="help__item">
               <div class="item__image">
-                <img
-                  src="../../assets/icons/icon-shampoos.svg"
-                  alt="icon"
-                  srcset=""
-                />
+                <img src="../../assets/icons/icon-shampoos.svg" alt="icon" />
               </div>
               <div class="item__text">Shampoos</div>
             </div>
             <div class="help__item">
               <div class="item__image">
-                <img
-                  src="../../assets/icons/icon-vitamins.svg"
-                  alt="icon"
-                  srcset=""
-                />
+                <img src="../../assets/icons/icon-vitamins.svg" alt="icon" />
               </div>
               <div class="item__text">Vitamins</div>
             </div>
             <div class="help__item">
               <div class="item__image">
-                <img
-                  src="../../assets/icons/icon-medicines.svg"
-                  alt="icon"
-                  srcset=""
-                />
+                <img src="../../assets/icons/icon-medicines.svg" alt="icon" />
               </div>
               <div class="item__text">Medicines</div>
             </div>
@@ -174,7 +187,6 @@
                 <img
                   src="../../assets/icons/icon-collars-leashes.svg"
                   alt="icon"
-                  srcset=""
                 />
               </div>
               <div class="item__text">Collars / leashes</div>
@@ -184,7 +196,6 @@
                 <img
                   src="../../assets/icons/icon-sleeping-area.svg"
                   alt="icon"
-                  srcset=""
                 />
               </div>
               <div class="item__text">Sleeping areas</div>
@@ -198,7 +209,6 @@
             class="donation__image"
             src="../../assets/images/donation-dog.png"
             alt="puppy"
-            srcset=""
           />
 
           <div class="donation__content">
@@ -211,7 +221,6 @@
                 class="donation__iconCard"
                 src="../../assets/icons/credit-card.svg"
                 alt="card"
-                srcset=""
               />
               <a class="donation__card-number" href="#"
                 >8380 2880 8028 8791 7435</a
@@ -245,7 +254,7 @@
               >
             </div>
             <div class="footer__info footer__info_contacts">
-              <a class="footer__address" href="tel:+13 674 567 75 54">
+              <a class="footer__address" href="tel:+136745677554">
                 <img
                   class="footer__icon"
                   src="../../assets/icons/icon-phone.svg"
@@ -297,6 +306,6 @@
         />
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
