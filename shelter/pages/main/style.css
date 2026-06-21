@@ -180,7 +180,7 @@ h2, h3, h4, h5, h6 {
 }
 @media (max-width: 768px) {
   .header {
-    justify-content: left;
+    justify-content: space-around;
   }
   .header__menu {
     display: none;
@@ -316,6 +316,9 @@ h2, h3, h4, h5, h6 {
     letter-spacing: 0.06em;
     margin: 0 auto;
   }
+  .start__text {
+    letter-spacing: 0.3px;
+  }
   .start__screen {
     width: 87%;
     margin: 35% 0 0 13%;
@@ -419,11 +422,10 @@ h2, h3, h4, h5, h6 {
   background-color: var(--color-light-l);
 }
 .pets__wrapper {
-  max-width: 1280px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-    row-gap: 60px;
+  row-gap: 60px;
   padding: 79px 40px 100px 40px;
 }
 .pets__title {
@@ -465,11 +467,10 @@ h2, h3, h4, h5, h6 {
   transition: background-color .3s ease-in-out;
 }
 .pets__button-arrow_left {
-   background-image: url(../../assets/icons/Arrow-l.svg);
+  background-image: url(../../assets/icons/Arrow-l.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .pets__button-arrow_right {
   background-image: url(../../assets/icons/Arrow-r.svg);
   background-position: center;
@@ -541,10 +542,10 @@ h2, h3, h4, h5, h6 {
 
 @media (max-width: 1280px) {
   .pets__wrapper {
-    padding: 79px 30px 100px 30px;
+   padding: 79px 30px 100px 30px;
   }
   .pets__slider-wrapper {
-    width: 580px;
+   justify-content: center;
     overflow: hidden;
   }
   .pets__slider {
@@ -574,9 +575,8 @@ h2, h3, h4, h5, h6 {
   }
   .pets__slider-wrapper {
     height: 85.8%;
-    justify-content: center;
-  }
-   .pets__button-arrow_left {
+}
+  .pets__button-arrow_left {
     order: 2;
   }
   .pets__button-arrow_right {
@@ -800,7 +800,6 @@ h2, h3, h4, h5, h6 {
   background-repeat: repeat, no-repeat;
 }
 .footer__wrapper {
-  max-width: 1280px;
   padding-top: 40px;
 }
 .footer__content {
